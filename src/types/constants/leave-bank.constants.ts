@@ -1,0 +1,70 @@
+export const HOURS_PER_DAY = 9;
+export const DEFAULT_CL_QUOTA = 8;
+export const DEFAULT_SL_QUOTA = 8;
+export const LeaveBankErrorMessages = {
+  VALIDATION_FAILED: '⚠️ Oops! Leave bank data needs some adjustments',
+  MONTH_REQUIRED: '📅 Month is required for data at index',
+  INVALID_DATA: '📋 The leave bank information needs correction',
+  PROCESSING_FAILED: "🔄 We couldn't process the leave bank data",
+  FILE_FORMAT_INVALID: '📄 We only work with Excel files for leave bank',
+  FILE_SIZE_EXCEEDED: '📏 This file is too large',
+  DUPLICATE_RECORD: '📋 This record already exists',
+  RECORD_NOT_FOUND: "🔍 We couldn't find that leave bank record",
+  UNAUTHORIZED_ACCESS: "🔒 You can't access this leave bank data",
+  BULK_OPERATION_FAILED: "👥 We couldn't complete the group operation",
+  ANALYTICS_FAILED: "📊 We couldn't generate the analytics",
+  EXPORT_FAILED: "📤 We couldn't export the leave bank data",
+  IMPORT_FAILED: "📥 We couldn't import the leave bank data",
+};
+export const Months = [
+  'january',
+  'february',
+  'march',
+  'april',
+  'may',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
+];
+export const MonthFields = [
+  'workingDays',
+  'shortHours',
+  'casualLeave',
+  'sickLeave',
+  'absent',
+  'extraHours',
+  'netHoursWorked',
+] as const;
+export const SummaryFields = [
+  'totalCL',
+  'totalSL',
+  'totalAbsent',
+  'totalCLAvailed',
+  'totalSLAvailed',
+  'totalAbsentAvailed',
+  'totalShortHours',
+  'totalExtraHours',
+  'remainingCL',
+  'remainingSL',
+  'netLeavesInDays',
+  'shortHoursInDays',
+  'totalAvailed',
+] as const;
+export const MonthColumns: Record<string, [string, string]> = {
+  january: ['F', 'L'],
+  february: ['M', 'S'],
+  march: ['T', 'Z'],
+  april: ['AA', 'AG'],
+  may: ['AH', 'AN'],
+  june: ['AO', 'AU'],
+  july: ['AV', 'BB'],
+  august: ['BC', 'BI'],
+  september: ['BJ', 'BP'],
+  october: ['BQ', 'BW'],
+  november: ['BX', 'CD'],
+  december: ['CE', 'CK'],
+};

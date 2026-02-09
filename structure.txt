@@ -1,0 +1,365 @@
+├── .cursor/
+│   └── rules.md
+├── .github/
+│   ├── workflows/
+│   │   └── deploy.yaml
+│   └── copilot-instructions.md
+├── .windsurf/
+│   └── workflows/
+│       ├── instructions.md
+│       └── review.md
+├── AppDocs/
+│   ├── APIDocs/
+│   │   ├── APIDocs/
+│   │   │   ├── Auth-Module-Review.md
+│   │   │   ├── Postman Documentation.md
+│   │   │   ├── Profile-Module-Review.md
+│   │   │   ├── Recruitment-Module-Review.md
+│   │   │   ├── Request-Module-API.md
+│   │   │   ├── Success Indicators - Use Cases.md
+│   │   │   ├── Success-Indicators-Documentation.md
+│   │   │   ├── Success-Indicators-Guide.md
+│   │   │   └── User-Module-Review.md
+│   │   ├── Auth-Module-Review.md
+│   │   ├── Department-Module-Review.md
+│   │   ├── Employee Details.md
+│   │   ├── LeaveBank-Module-Review.md
+│   │   ├── Notify flow MS.md
+│   │   ├── parantchild.md
+│   │   ├── Paylaod Exampes.md
+│   │   ├── Postman Documentation.md
+│   │   ├── Postman.md
+│   │   ├── Profile-Module-Review.md
+│   │   ├── Recruitment-Module-Review.md
+│   │   ├── Request-Module-API.md
+│   │   ├── role-hierarchy-diagram.md
+│   │   ├── Success Indicator Use-Cases.md
+│   │   ├── Success Indicators - Use Cases.md
+│   │   ├── Success-Indicators-Documentation.md
+│   │   ├── Success-Indicators-Guide.md
+│   │   ├── Suggestion.md
+│   │   ├── Use-Cases.md
+│   │   └── User-Module-Review.md
+│   ├── docs/
+│   │   ├── # Leave Bank Script - Excel.md.html
+│   │   └── Comprehensive-System-Review.md
+│   ├── files.zip
+│   ├── n8n.config.md
+│   └── prompt for Cursor.md
+├── internes/
+├── src/
+│   ├── config/
+│   │   ├── database/
+│   │   │   └── database.module.ts
+│   │   ├── swagger/
+│   │   │   ├── schemas.ts
+│   │   │   └── swagger.config.ts
+│   │   ├── config.ts
+│   │   └── gcs.config.ts
+│   ├── core/
+│   │   ├── decorators/
+│   │   │   ├── api-response.decorators.ts
+│   │   │   ├── get-user.decorators.ts
+│   │   │   ├── permission.decorators.ts
+│   │   │   ├── public.decorators.ts
+│   │   │   └── roles.decorators.ts
+│   │   ├── filters/
+│   │   │   ├── auth-exception.filter.ts
+│   │   │   └── global-exception.filter.ts
+│   │   ├── guards/
+│   │   │   ├── auth.guard.ts
+│   │   │   ├── jwt.strategy.ts
+│   │   │   └── permissions.guard.ts
+│   │   ├── interceptors/
+│   │   │   ├── logging.interceptor.ts
+│   │   │   ├── security-logging.interceptor.ts
+│   │   │   ├── timeout.interceptor.ts
+│   │   │   └── transform.interceptor.ts
+│   │   └── pipes/
+│   │       └── validation.pipe.ts
+│   ├── modules/
+│   │   ├── announcement/
+│   │   │   ├── announcement.controller.ts
+│   │   │   ├── announcement.module.ts
+│   │   │   ├── announcement.service.spec.ts
+│   │   │   ├── announcement.service.ts
+│   │   │   └── README.md
+│   │   ├── applications/
+│   │   │   └── schemas/
+│   │   │       └── application.schema.ts
+│   │   ├── auth/
+│   │   │   ├── dto/
+│   │   │   │   └── auth.dto.ts
+│   │   │   ├── auth.controller.spec.ts
+│   │   │   ├── auth.controller.ts
+│   │   │   ├── auth.module.ts
+│   │   │   ├── auth.service.spec.ts
+│   │   │   ├── auth.service.ts
+│   │   │   └── README.md
+│   │   ├── companies/
+│   │   │   ├── controllers/
+│   │   │   │   └── company.controller.ts
+│   │   │   ├── dto/
+│   │   │   │   ├── create-company.dto.ts
+│   │   │   │   └── update-company.dto.ts
+│   │   │   ├── schemas/
+│   │   │   │   └── company.schema.ts
+│   │   │   ├── services/
+│   │   │   │   └── company.service.ts
+│   │   │   └── company.module.ts
+│   │   ├── department/
+│   │   │   ├── dto/
+│   │   │   │   └── department.dto.ts
+│   │   │   ├── schemas/
+│   │   │   │   └── department.schema.ts
+│   │   │   ├── department.controller.spec.ts
+│   │   │   ├── department.controller.ts
+│   │   │   ├── department.repository.ts
+│   │   │   ├── department.service.spec.ts
+│   │   │   ├── department.service.ts
+│   │   │   ├── departments.module.ts
+│   │   │   └── README.md
+│   │   ├── document/
+│   │   │   ├── dto/
+│   │   │   │   └── document.dto.ts
+│   │   │   ├── schemas/
+│   │   │   │   └── document.schema.ts
+│   │   │   ├── document.controller.spec.ts
+│   │   │   ├── document.controller.ts
+│   │   │   ├── document.module.ts
+│   │   │   ├── document.repository.ts
+│   │   │   ├── document.service.ts
+│   │   │   └── README.md
+│   │   ├── health/
+│   │   │   ├── health.controller.ts
+│   │   │   └── health.module.ts
+│   │   ├── integrations/
+│   │   │   ├── controllers/
+│   │   │   │   └── n8n-webhook.controller.ts
+│   │   │   ├── services/
+│   │   │   │   ├── n8n-webhook.service.ts
+│   │   │   │   ├── resume-parser.service.ts
+│   │   │   │   └── time-doctor.service.ts
+│   │   │   └── integrations.module.ts
+│   │   ├── jobs/
+│   │   │   └── schemas/
+│   │   │       └── job.schema.ts
+│   │   ├── leave-bank/
+│   │   │   ├── core/
+│   │   │   │   ├── utils/
+│   │   │   │   │   ├── bank-analytics.ts
+│   │   │   │   │   ├── bank-builder.ts
+│   │   │   │   │   ├── bank-Calculator.ts
+│   │   │   │   │   ├── bank-helper.ts
+│   │   │   │   │   ├── bank-mapper.ts
+│   │   │   │   │   └── bank-transformer.ts
+│   │   │   │   └── validators/
+│   │   │   │       └── leave-bank.validator.ts
+│   │   │   ├── dto/
+│   │   │   │   └── leave-bank.dto.ts
+│   │   │   ├── helpers/
+│   │   │   │   ├── excel-parsing.helper.ts
+│   │   │   │   ├── leave-bank-action.helper.ts
+│   │   │   │   └── process-result.builder.ts
+│   │   │   ├── integration/
+│   │   │   │   └── leave-bank-test-data.factory.ts
+│   │   │   ├── process/
+│   │   │   │   └── leave-bank-processor.service.ts
+│   │   │   ├── schemas/
+│   │   │   │   └── leave-bank.schema.ts
+│   │   │   ├── leave-bank.controller.spec.ts
+│   │   │   ├── leave-bank.controller.ts
+│   │   │   ├── leave-bank.module.ts
+│   │   │   ├── leave-bank.repository.ts
+│   │   │   ├── leave-bank.service.ts
+│   │   │   └── README.md
+│   │   ├── profile/
+│   │   │   ├── dto/
+│   │   │   │   ├── profile.dto.spec.ts
+│   │   │   │   └── profile.dto.ts
+│   │   │   ├── schemas/
+│   │   │   │   └── profiles.schema.ts
+│   │   │   ├── profile.controller.spec.ts
+│   │   │   ├── profile.controller.ts
+│   │   │   ├── profile.module.ts
+│   │   │   ├── profile.repository.ts
+│   │   │   ├── profile.service.spec.ts
+│   │   │   ├── profile.service.ts
+│   │   │   └── README.md
+│   │   ├── recruitment/
+│   │   │   ├── dto/
+│   │   │   │   └── recruitment.dto.ts
+│   │   │   ├── schemas/
+│   │   │   │   └── candidate.schema.ts
+│   │   │   ├── README.md
+│   │   │   ├── recruitment.controller.spec.ts
+│   │   │   ├── recruitment.controller.ts
+│   │   │   ├── recruitment.module.ts
+│   │   │   ├── recruitment.public.controller.ts
+│   │   │   ├── recruitment.repository.ts
+│   │   │   └── recruitment.service.ts
+│   │   ├── request/
+│   │   │   ├── dto/
+│   │   │   │   └── request-dto.ts
+│   │   │   ├── schemas/
+│   │   │   │   └── request.schema.ts
+│   │   │   ├── README.md
+│   │   │   ├── request.controller.spec.ts
+│   │   │   ├── request.controller.ts
+│   │   │   ├── request.module.ts
+│   │   │   ├── request.repository.ts
+│   │   │   └── request.service.ts
+│   │   ├── tenants/
+│   │   │   └── middleware/
+│   │   │       └── tenant.middleware.ts
+│   │   └── user/
+│   │       ├── dto/
+│   │       │   └── user.dto.ts
+│   │       ├── schemas/
+│   │       │   └── user.schema.ts
+│   │       ├── README.md
+│   │       ├── user.controller.spec.ts
+│   │       ├── user.controller.ts
+│   │       ├── user.module.ts
+│   │       ├── user.repository.spec.ts
+│   │       ├── user.repository.ts
+│   │       ├── user.service.spec.ts
+│   │       └── user.service.ts
+│   ├── public/
+│   │   └── assets/
+│   │       ├── Architecture Diagram.png
+│   │       └── default-profile.png
+│   ├── scripts/
+│   │   ├── generate-structure.ts
+│   │   ├── setup-test-jest.ts
+│   │   ├── setup-test.ts
+│   │   └── setup-unit.ts
+│   ├── services/
+│   │   └── email/
+│   │       ├── announcement/
+│   │       │   ├── announcement-email-templates.service.ts
+│   │       │   └── announcement-email.service.ts
+│   │       ├── leave-bank/
+│   │       │   ├── leave-bank-email-templates.service.ts
+│   │       │   └── leave-bank-email.service.ts
+│   │       ├── profile/
+│   │       │   ├── email-indicators-process.service.ts
+│   │       │   ├── email-indicators-templates.service.ts
+│   │       │   ├── email-statement-process.service.ts
+│   │       │   └── email-statement-templates.service.ts
+│   │       ├── recruitment/
+│   │       │   └── email-recruitment-templates.service.ts
+│   │       ├── request/
+│   │       │   ├── email-request-action.service.ts
+│   │       │   ├── email-request-process.service.ts
+│   │       │   └── email-request-templates.service.ts
+│   │       └── user/
+│   │           ├── email-auth-templates.service.ts
+│   │           └── email-auth.service.ts
+│   ├── shared/
+│   │   ├── helpers/
+│   │   │   ├── code.helper.ts
+│   │   │   ├── common.helpers.ts
+│   │   │   ├── email.helper.ts
+│   │   │   ├── format-Dates.helper.ts
+│   │   │   ├── indicators.helper.ts
+│   │   │   ├── pagination.helper.ts
+│   │   │   ├── password-strength.helper.ts
+│   │   │   ├── profile.helper.ts
+│   │   │   ├── recruitment.helpers.ts
+│   │   │   ├── request.helpers.ts
+│   │   │   └── user.helpers.ts
+│   │   ├── mappers/
+│   │   │   └── department.mapper.ts
+│   │   ├── utils/
+│   │   │   ├── email.utils.ts
+│   │   │   ├── gcs.utils.ts
+│   │   │   ├── role-display.utils.ts
+│   │   │   └── unified-transform.utils.ts
+│   │   ├── validators/
+│   │   │   ├── file.validation.ts
+│   │   │   ├── iD.validation.ts
+│   │   │   ├── input.validation.ts
+│   │   │   ├── request-validation.helper.ts
+│   │   │   └── user-data.validation.ts
+│   │   └── shared.module.ts
+│   ├── types/
+│   │   ├── constants/
+│   │   │   ├── emails/
+│   │   │   │   ├── announcement-email.constants.ts
+│   │   │   │   ├── leave-bank-emails.constants.ts
+│   │   │   │   ├── mission-statement-emails.constants.ts
+│   │   │   │   ├── recruitment-emails.constants.ts
+│   │   │   │   ├── request-approval-emails.constants.ts
+│   │   │   │   ├── request-disapproval-emails.constants.ts
+│   │   │   │   ├── request-remarks-emails.constants.ts
+│   │   │   │   ├── request-submission-emails.constants.ts
+│   │   │   │   ├── request-withdrawal-emails.constants.ts
+│   │   │   │   ├── success-indicators-emails.constants.ts
+│   │   │   │   └── user-creation-emails.constants.ts
+│   │   │   ├── decorator-keys.constants.ts
+│   │   │   ├── error-messages.constants.ts
+│   │   │   ├── leave-bank.constants.ts
+│   │   │   ├── recruitment.constants.ts
+│   │   │   ├── role-hierarchy.constants.ts
+│   │   │   ├── storage.constants.ts
+│   │   │   ├── system.config.constants.ts
+│   │   │   ├── system.constants.ts
+│   │   │   ├── url-tags.constants.ts
+│   │   │   └── user-status.constants.ts
+│   │   ├── dtos/
+│   │   │   ├── base.dto.ts
+│   │   │   ├── pagination.dto.ts
+│   │   │   └── response.dto.ts
+│   │   ├── enums/
+│   │   │   ├── doc.enums.ts
+│   │   │   ├── leave-bank.enums.ts
+│   │   │   ├── permissions.enum.ts
+│   │   │   ├── personal-info.enums.ts
+│   │   │   ├── profile.enums.ts
+│   │   │   ├── recruitment.enums.ts
+│   │   │   ├── request.enums.ts
+│   │   │   └── role.enums.ts
+│   │   ├── interfaces/
+│   │   │   ├── base.interface.ts
+│   │   │   ├── department.interface.ts
+│   │   │   ├── document.interface.ts
+│   │   │   ├── email.interface.ts
+│   │   │   ├── fileValidation.interface.ts
+│   │   │   ├── filters.interface.ts
+│   │   │   ├── jwt.interface.ts
+│   │   │   ├── leave-bank.interface.ts
+│   │   │   ├── pagination.interface.ts
+│   │   │   ├── profile-document.interface.ts
+│   │   │   ├── profile.interface.ts
+│   │   │   ├── recruitment.interface.ts
+│   │   │   ├── request.interface.ts
+│   │   │   ├── statement.interface.ts
+│   │   │   ├── transform.interface.ts
+│   │   │   └── user.interface.ts
+│   │   └── multer.d.ts
+│   ├── app.controller.spec.ts
+│   ├── app.controller.ts
+│   ├── app.module.ts
+│   ├── app.service.ts
+│   └── main.ts
+├── test-results/
+│   └── junit.xml
+├── .dockerignore
+├── .env.example
+├── .env.test
+├── .eslintrc.cjs
+├── .gitignore
+├── .hintrc
+├── .prettierrc
+├── cspell.json
+├── Dockerfile
+├── jest.config.js
+├── nest-cli.json
+├── package.json
+├── README.md
+├── SECURITY.md
+├── tsconfig.build.json
+├── tsconfig.json
+├── tsconfig.spec.json
+└── webpack.config.js
